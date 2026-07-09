@@ -9,15 +9,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --paper:#F1EFE9;
-    --paper-2:#E9E6DE;
-    --ink:#191B22;
-    --ink-soft:#4A4D57;
-    --mono-grey:#787C85;
-    --line:#D3CFC3;
-    --blue:#2C46E0;
-    --amber:#DC9A32;
-    --card:#FBFAF6;
+    --paper:#F3E4C9;
+    --paper-2:#EAD8B8;
+    --ink:#0A2947;
+    --ink-soft:#3E5670;
+    --mono-grey:#75705F;
+    --line:#D3D4C0;
+    --blue:#8B5E3C;
+    --amber:#8B5E3C;
+    --card:#F8EEDA;
   }
   *{box-sizing:border-box; margin:0; padding:0;}
   html{scroll-behavior:smooth;}
@@ -49,7 +49,7 @@
   /* NAV */
   header.nav{
     position:sticky; top:0; z-index:50;
-    background:rgba(241,239,233,0.88);
+    background:rgba(243,228,201,0.88);
     backdrop-filter:blur(6px);
     border-bottom:1px solid var(--line);
   }
@@ -87,7 +87,7 @@
 
   /* PROFILE PHOTO */
   .profile-photo{
-    flex:0 0 168px; width:168px; height:168px; border:1px solid var(--line);
+    flex:0 0 260px; width:260px; height:260px; border:1px solid var(--line);
     background:var(--card); display:flex; align-items:center; justify-content:center;
     flex-direction:column; gap:6px; text-align:center; padding:14px; position:relative;
   }
@@ -95,16 +95,16 @@
   .profile-photo .placeholder-label{font-family:'IBM Plex Mono', monospace; font-size:10.5px; text-transform:uppercase; letter-spacing:.07em; color:var(--mono-grey);}
   .profile-photo .placeholder-sub{font-family:'IBM Plex Mono', monospace; font-size:9.5px; color:var(--mono-grey); opacity:.7;}
   .profile-photo::before{
-    content:''; position:absolute; top:-1px; left:-1px; width:14px; height:14px;
+    content:''; position:absolute; top:-1px; left:-1px; width:18px; height:18px;
     border-top:1px solid var(--amber); border-left:1px solid var(--amber);
   }
   .profile-photo::after{
-    content:''; position:absolute; bottom:-1px; right:-1px; width:14px; height:14px;
+    content:''; position:absolute; bottom:-1px; right:-1px; width:18px; height:18px;
     border-bottom:1px solid var(--amber); border-right:1px solid var(--amber);
   }
   @media (max-width:640px){
     .hero-top{flex-direction:column-reverse;}
-    .profile-photo{flex:0 0 auto; width:120px; height:120px;}
+    .profile-photo{flex:0 0 auto; width:180px; height:180px;}
   }
 
   /* FRICTION LOG - signature element */
@@ -184,7 +184,7 @@
   .carousel-slide .placeholder-sub{font-family:'IBM Plex Mono', monospace; font-size:10.5px; color:var(--mono-grey); opacity:.7;}
   .carousel-arrow{
     position:absolute; top:50%; transform:translateY(-50%); z-index:2;
-    width:34px; height:34px; border:1px solid var(--line); background:rgba(251,250,246,0.9);
+    width:34px; height:34px; border:1px solid var(--line); background:rgba(248,238,218,0.9);
     display:flex; align-items:center; justify-content:center; cursor:pointer;
     font-family:'IBM Plex Mono', monospace; font-size:14px; color:var(--ink); transition:.15s;
   }
@@ -192,14 +192,14 @@
   .carousel-prev{left:10px;} .carousel-next{right:10px;}
   .carousel-dots{
     position:absolute; bottom:10px; left:50%; transform:translateX(-50%); z-index:2;
-    display:flex; gap:6px; background:rgba(251,250,246,0.85); padding:6px 8px; border:1px solid var(--line);
+    display:flex; gap:6px; background:rgba(248,238,218,0.85); padding:6px 8px; border:1px solid var(--line);
   }
   .carousel-dot{width:6px; height:6px; border-radius:50%; background:var(--line); border:none; cursor:pointer; padding:0;}
   .carousel-dot.active{background:var(--blue);}
 
   /* LIGHTBOX */
   .lightbox{
-    position:fixed; inset:0; background:rgba(20,18,15,0.92); z-index:200;
+    position:fixed; inset:0; background:rgba(6,24,42,0.94); z-index:200;
     display:none; align-items:center; justify-content:center; padding:40px;
   }
   .lightbox.open{display:flex;}
@@ -525,15 +525,6 @@
     </div>
 
     <div class="exp-item">
-      <div class="when">Jun – Aug 2025</div>
-      <div>
-        <h3>Analytics &amp; Operations Intern</h3>
-        <div class="org">KPMG, Advisory Division · Lagos</div>
-        <p>Analysed operational datasets with Excel (VLOOKUP, Pivot Tables) to validate and reconcile data for advisory engagements. Collaborated cross-functionally to improve reporting accuracy and flagged workflow inefficiencies to stakeholders.</p>
-      </div>
-    </div>
-
-    <div class="exp-item">
       <div class="when">May 2025 – Present</div>
       <div>
         <h3>Founder</h3>
@@ -544,11 +535,65 @@
     </div>
 
     <div class="exp-item">
+      <div class="when">Sept 2024 – Present</div>
+      <div>
+        <h3>Product Lead</h3>
+        <div class="org">CafApp, Redeemer's University</div>
+        <p>Spearheaded end-to-end development of a campus application for real-time cafeteria food availability and queue tracking. Interviewed 50+ students, defined the MVP backlog with MoSCoW, and secured administrative buy-in for campus-wide deployment.</p>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="when">Jun – Aug 2025</div>
+      <div>
+        <h3>Analytics &amp; Operations Intern</h3>
+        <div class="org">KPMG, Advisory Division · Lagos</div>
+        <p>Analysed operational datasets with Excel (VLOOKUP, Pivot Tables) to validate and reconcile data for advisory engagements. Collaborated cross-functionally to improve reporting accuracy and flagged workflow inefficiencies to stakeholders.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="hr">
+
+  <section id="volunteering">
+    <div class="section-head">
+      <h2>Volunteering</h2>
+      <span class="eyebrow">Outside the day job</span>
+    </div>
+
+    <div class="exp-item">
+      <div class="when">Mar 2025 – Present</div>
+      <div>
+        <h3>Director of Guest Relations</h3>
+        <div class="org">Aspire 360</div>
+        <p>Managed stakeholder relationships for career programmes and coordinated communication and event operations.</p>
+      </div>
+    </div>
+
+    <div class="exp-item">
       <div class="when">2024</div>
       <div>
         <h3>Head, Data Analytics Stack</h3>
         <div class="org">TechyVibrations</div>
         <p>Led the analytics function within the organization's technical stack.</p>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="when">2024</div>
+      <div>
+        <h3>Beta Tester</h3>
+        <div class="org">ETC Vibes</div>
+        <p>Tested pre-release features and provided structured product feedback ahead of public rollout.</p>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="when">2024</div>
+      <div>
+        <h3>Special Assistant to the General Secretary</h3>
+        <div class="org">Redeemer's University Technology Space (RUNTechSpace)</div>
+        <p>Supported coordination and communications for the university's technology innovation space.</p>
       </div>
     </div>
   </section>
